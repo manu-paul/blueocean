@@ -11,17 +11,17 @@ pipeline {
     stages {
         stage('Development') {
             steps {
-                sh 'npm install'
+                echo 'Hello Development'
             }
         }
         stage('Staging') {
             steps {
-                sh './jenkins/scripts/test.sh'
+                echo 'Hello Staging'
             }
         }
         stage('Deployment') {
           steps {
-            echo 'Hello World'
+            echo 'Hello Deployment'
           }
         }
     }
